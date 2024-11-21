@@ -10,6 +10,7 @@ font-size: 36px;
 color:orangered;
 }
 
+
 #navbarid{
     padding-left: 80px;
     padding-right: 80px;
@@ -74,7 +75,7 @@ color:orangered;
     color: orangered;
 }
 .sect3{
-    background-color: aqua;
+    background-color:  #6a71791a;
     height: auto;
     padding-left: 70px;
     padding-right: 40px;
@@ -88,6 +89,312 @@ color:orangered;
     padding-right: 40px;
     padding-top: 40px;
 }
-.progress-bar{
-   color: orangered;
+
+.progress{
+    background-color: rgb(205, 204, 214);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.pro-value{
+    animation: load1 13s normal forwards;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.829);
+    height: 30px;
+    width: 0px;
+}
+.progress p{
+    color: white;
+    padding: 1px;
+    margin-left: 10px;
+}
+
+.pro-value2{
+    animation: load2 13s normal forwards;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.829);
+    height: 30px;
+    width: 0px;
+}
+
+.pro-value3{
+    animation: load3 13s normal forwards;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.829);
+    height: 30px;
+    width: 0px;
+}
+
+.pro-value4{
+    animation: load4 13s normal forwards;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.829);
+    height: 30px;
+    width: 0px;
+}
+.pro-value5{
+    animation: load5 13s normal forwards;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.829);
+    height: 30px;
+    width: 0px;
+}
+.pro-value6{
+    animation: load6 13s normal forwards;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.829);
+    height: 30px;
+    width: 0px;
+}
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 93%;
+    }
+}
+
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 92%;
+    }
+}
+
+@keyframes load4{
+    0%{
+        width: 0;
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes load5{
+    0%{
+        width: 0;
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        width: 87%;
+    }
+}
+@keyframes load6{
+    0%{
+        width: 0;
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.btn1{
+    height: 55px;
+    width: 138px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border:none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btn1:hover{
+    background-color: orange;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+
+.btn2 {
+    height: 55px;
+    width: 138px;
+    background-color: transparent; /* Set background to transparent */
+    color: orange;
+    outline: none;
+    border: 1px solid red;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn2:hover {
+    background-color: orange;
+    border:1px solid black;
+    color: black; 
+    transition: 0.5s;
+}
+
+
+
+#btnDiv{
+
+    padding-left: 800px;
+}
+
+#skills{
+    padding-left: 80px;
+}
+
+#progress-div{
+    padding-right: 200px;
+}
+
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-card .btn {
+    background-color: orangered;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .project-card .btn:hover {
+    background-color: rgb(230, 9, 9);
+
+  }
+  .contact {
+    background-color: #f8f9fa;
+  }
+  
+  .contact .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .contact .form-control:focus,
+  .contact .form-control:hover {
+    border-color: #ffa500;
+    background-color: #fff3e6;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+  }
+  
+  .contact label {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .contact .btn {
+    background-color: orangered;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 25px;
+
+    cursor: pointer;           
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .contact .btn:hover {
+    background-color: rgb(233, 25, 25);
+    transform: scale(1.1); 
+    
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact .card-body {
+    padding: 30px;
+  }
+  
+  .contact .form-group {
+    margin-bottom: 20px;
+  }
+  
+
+.footer {
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer .social-icon {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: orangered;  
+}
+
+.footer .social-icon i {
+    transition: transform 0.3s ease; 
+}
+
+.footer .social-icon:hover i {
+    transform: scale(1.2); 
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer h5 {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
 }
