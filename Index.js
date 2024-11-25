@@ -43,3 +43,22 @@ $('.slider').slick({
     });
   });
  
+
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Add an event listener to each nav link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Remove the background color and border radius from all links
+      navLinks.forEach(otherLink => {
+        otherLink.style.backgroundColor = '';
+        otherLink.style.borderRadius = '';
+      });
+  
+      // Change the background color to red and add border radius to the clicked link
+      link.style.backgroundColor = 'orangered';
+      link.style.borderRadius = '5px';
+    });
+  });
+
+
