@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="Index.css">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,32 +14,47 @@
 </head>
 <body>
     <header class="Headings">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbarid">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><h2 id="Brand">Portfolio</h2></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="#" >Home</a>
-                  <a class="nav-link" href="#About" >About</a>
-                  <a class="nav-link" href="#Qualification" >Qualification</a>
-                  <a class="nav-link" href="#Skill" >Skills</a>
-                  <a class="nav-link" href="#projects" >Projects</a>
-                  <a class="nav-link" href="#contact" >Contact</a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-3 col-3">
+           
+           
+              
+            <h2 id="Brand">Portfolio</h2>
+          </div>
+          <div class="col-md-8 col-sm-9 col-9">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="navbarid">
+              <div class="container-fluid">
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon mx-auto" ></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+                  <div class="navbar-nav ms-auto"  >
+                    <a class="nav-link" aria-current="page" href="#" >Home</a>
+                    <a class="nav-link" href="#About" >About</a>
+                    <a class="nav-link" href="#Qualification" >Qualification</a>
+                    <a class="nav-link" href="#Skill" >Skills</a>
+                    <a class="nav-link" href="#projects" >Projects</a>
+                    <a class="nav-link" href="#contact" >Contact</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
+        </div>
+       
+      
+      </div>
+        
     </header>
     <section id="Main">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6" id="Div1">
-                   <img src="Pic1.png" alt="">
+                   <img src="first.png" alt="" width="400px">
                 </div>
-                <div class="col-md-6" id="Hello">
+                <div class="col-md-6 col-sm-6 col-5" id="Hello">
                     <h3 >
                         <small>Hello, I’M</small><br />
                         <b>Midhun</b>
@@ -54,14 +70,14 @@
     <section class="Sect2" id="About">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <h3 id="text"><b>About Me</b></h3>
                     <br>
                     <p id="para">I am a recent B.Tech graduate in Computer Science with a passion for technology and software development. I have developed a solid understanding of programming languages such as Python and JavaScript, and I am proficient in web technologies including HTML, CSS, and React. My experience extends to database management with MySQL, where I have learned to design and optimize databases effectively.</p>
 
                     <p id="para">I am eager to apply my technical skills in a collaborative environment and contribute to innovative projects. I thrive on learning new technologies and continuously improving my abilities. As I embark on my professional journey, I am excited about the opportunity to make a meaningful impact in the tech industry.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-5 ">
                     <div id="AboutImg"><img src="About.png" alt="" width="400px"></div>
                 </div>
             </div>
@@ -72,7 +88,7 @@
 
         <div class="container">
             <div class="row justify-content-start">
-                <div class="col-md-4  mt-4 port " id="portfolio">
+                <div class="col-md-4 col-sm-6 mt-4 port " id="portfolio">
                     <h2 id="text"><b><b>Qualification</b></b></h2>
                 </div>
             </div>
@@ -100,7 +116,7 @@
                     </div>
   
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                     <div class="details ">
                       <img src="Course.png" alt="" width="300px" >
   
@@ -117,76 +133,78 @@
     
     <section class="sect4 py-5" id="Skill">
         
-        <div class="container-fluid py-5" id="skills">
-            
-          <div class="row">
-            <div class="col-lg-5">
-              <img
-                src="Skills.png"
-                class="img-fluid rounded"
-                alt="About "
-             width="400px" />
-            </div>
-            <div class="col-lg-7" id="progress-div">
-              <h2 id="text"><b><b>Skills</b></b></h2>
-              <br>
-              <p id="para">
-                I am skilled in various programming and web development technologies. With <b>Python</b>, I create effective solutions for different tasks. My expertise in <b>HTML</b> and <b>CSS</b> allows me to design responsive and attractive web interfaces, while <b>JavaScript</b> helps me build interactive applications. Using <b>React</b>, I develop modern and scalable front-end designs, and my knowledge of <b>MySQL</b> enables me to manage and optimize databases efficiently. Together, these skills help me deliver innovative and user-friendly solutions.
-            </p>
+      <div class="container-fluid py-5" id="skills">
+          
+        <div class="row">
+          <div class="col-lg-5">
+            <img
+              src="Skills.png"
+              class="img-fluid rounded"
+              alt="About "
+           width="400px" />
+          </div>
+          <div class="col-lg-7 col-sm-6" id="progress-div">
+            <h2 id="text"><b><b>Skills</b></b></h2>
             <br>
-              <div class="progress my-3">
-                <div class="pro-value">
-                    <p class="fs-6 fw-bold">HTML /CSS <span style="float: inline-end;">95%</span> </p>
-                </div>
-            </div>
-
+            <p id="para">
+              I am skilled in various programming and web development technologies. With <b>Python</b>, I create effective solutions for different tasks. My expertise in <b>HTML</b> and <b>CSS</b> allows me to design responsive and attractive web interfaces, while <b>JavaScript</b> helps me build interactive applications. Using <b>React</b>, I develop modern and scalable front-end designs, and my knowledge of <b>MySQL</b> enables me to manage and optimize databases efficiently. Together, these skills help me deliver innovative and user-friendly solutions.
+          </p>
+          <br>
             <div class="progress my-3">
-                <div class="pro-value2">
-                    <p class="fs-6 fw-bold">BOOTSTRAP <span style="float: inline-end;">93%</span> </p>
-                </div>
-            </div>
+              <div class="pro-value">
+                  <p class="fs-6 fw-bold">HTML /CSS <span style="float: inline-end;">95%</span> </p>
+              </div>
+          </div>
 
-            <div class="progress my-3">
-                <div class="pro-value3">
-                    <p class="fs-6 fw-bold">MYSQL <span style="float: inline-end;">92%</span> </p>
-                </div>
-            </div>
+          <div class="progress my-3">
+              <div class="pro-value2">
+                  <p class="fs-6 fw-bold">BOOTSTRAP <span style="float: inline-end;">93%</span> </p>
+              </div>
+          </div>
 
-            
-            <div class="progress my-3">
-              <div class="pro-value4">
-                  <p class="fs-6 fw-bold">PYTHON <span style="float: inline-end;">90%</span> </p>
+          <div class="progress my-3">
+              <div class="pro-value3">
+                  <p class="fs-6 fw-bold">MYSQL <span style="float: inline-end;">92%</span> </p>
               </div>
           </div>
 
           
           <div class="progress my-3">
-            <div class="pro-value5">
-                <p class="fs-6 fw-bold">JAVASCRIPT / JQUERY <span style="float: inline-end;">87%</span> </p>
+            <div class="pro-value4">
+                <p class="fs-6 fw-bold">PYTHON <span style="float: inline-end;">90%</span> </p>
             </div>
         </div>
 
-            <div class="progress my-3">
-                <div class="pro-value6">
-                    <p class="fs-6 fw-bold">REACT <span style="float: inline-end;">85%</span> </p>
-                </div>
-            </div>
+        
+        <div class="progress my-3">
+          <div class="pro-value5">
+              <p class="fs-6 fw-bold">JAVASCRIPT / JQUERY <span style="float: inline-end;">87%</span> </p>
+          </div>
+      </div>
 
+          <div class="progress my-3">
+              <div class="pro-value6">
+                  <p class="fs-6 fw-bold">REACT <span style="float: inline-end;">85%</span> </p>
               </div>
-           
-      
-              
-              <div class="mt-5" style="word-spacing: 25px;" id="btnDiv">
-                <input type="button" class="btn1" value="Hire Me">
-                <a href="#ContactMe"><input type="button" class="btn2" value="Contact Me"> </a>
+          </div>
+
             </div>
+         
+    
+            
+            <div class="mt-5" style="word-spacing: 25px;" id="btnDiv">
+              <input type="button" class="btn1" value="Hire Me">
+              <a href="#ContactMe"><input type="button" class="btn2" value="Contact Me"> </a>
+          </div>
 
 
-              
-            </div>
+            
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+
 
       <section class="projects py-5" id="projects">
         <div class="container">
@@ -331,37 +349,33 @@
           </div>
         </div>
       </section>
-      <footer class="footer py-4">
-        
+      <footer class="footer py-4 bg-dark">
         <div class="container text-center">
           <div class="row" id="ContactMe">
-            <div class="col-md-12 mb-3">
+            <div class="col-12 mb-3">
               <h5 class="text-white"><b>Connect with Me</b></h5>
             </div>
-            <div class="col-md-12">
+            <div class="col-12">
               <a href="https://www.facebook.com/webdevelopermidhun" target="_blank" class="social-icon mx-3">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/midhun-mb" target="_blank" class="social-icon mx-3">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/d_ark_shade/" target="_blank" class="social-icon mx-3">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://wa.me/+919567114355" target="_blank" class="social-icon mx-3">
-              <i class="fab fa-brands fa-whatsapp fa-2x"></i>
-          </a>
-            
+                <i class="fab fa-facebook fa-2x text-white"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/midhun-mb" target="_blank" class="social-icon mx-3">
+                <i class="fab fa-linkedin fa-2x text-white"></i>
+              </a>
+              <a href="https://www.instagram.com/d_ark_shade/" target="_blank" class="social-icon mx-3">
+                <i class="fab fa-instagram fa-2x text-white"></i>
+              </a>
+              <a href="https://wa.me/+919567114355" target="_blank" class="social-icon mx-3">
+                <i class="fab fa-whatsapp fa-2x text-white"></i>
+              </a>
             </div>
           </div>
           <div class="mt-4">
             <p class="text-white">&copy; 2024 <b>Midhun M B</b>. All rights reserved.</p>
           </div>
         </div>
-
-        
-  
       </footer>
+      
       
       <script>
 const form = document.getElementById('form');

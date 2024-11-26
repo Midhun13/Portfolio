@@ -1,3 +1,4 @@
+
 .Headings{
 position: fixed;
 top: 0; 
@@ -5,22 +6,34 @@ left: 0;
 right: 0;
 z-index: 1000;
 }
+
+
 .navbar-nav{
-margin-left: 600px;
+margin-left: 200px;
 }
 #Brand{
+margin-left: 60px;
+margin-top: 10px;
 font-weight: bolder;
 font-size: 24px;
 color:orangered;
 }
-
 
 #navbarid{
     padding-left: 80px;
     padding-right: 80px;
   
 }
-.nav-link{
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: flex-start;
+    background-color: transparent;
+  }
+.navbar-nav{
+    margin-right: 10px;
+}
+.navbar-nav .nav-link{
     margin-left: 20px;
 }
 
@@ -58,6 +71,10 @@ color:orangered;
         transform: scale(1.05); 
     }
 
+    #Div1{
+        margin-top: 40px;
+    }
+
     #Main{
         padding: 40px;
     }
@@ -73,7 +90,7 @@ color:orangered;
     padding-top: 40px;
 }
 #AboutImg{
-    padding-left: 150px;
+    padding-left: 100px;
 }
 #text{
     color: orangered;
@@ -91,7 +108,7 @@ color:orangered;
 #sect4{
     padding-left: 70px;
     padding-right: 40px;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .progress{
@@ -259,7 +276,7 @@ color:orangered;
 }
 
 #progress-div{
-    padding-right: 200px;
+    padding-right: 100px;
 }
 
 .project-card {
@@ -391,16 +408,6 @@ color:orangered;
 .footer p {
     font-size: 1rem;
     margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-    .footer h5 {
-        font-size: 1.2rem;
-    }
-
-    .footer p {
-        font-size: 0.9rem;
-    }
 }
 
 #btnTop{
