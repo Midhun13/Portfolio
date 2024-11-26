@@ -30,7 +30,7 @@
                   <span class="navbar-toggler-icon mx-auto" ></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-                  <div class="navbar-nav ms-auto"  >
+                  <div class="navbar-nav ms-auto text-left"  >
                     <a class="nav-link" aria-current="page" href="#" >Home</a>
                     <a class="nav-link" href="#About" >About</a>
                     <a class="nav-link" href="#Qualification" >Qualification</a>
@@ -44,9 +44,8 @@
           </div>
         </div>
        
-      
       </div>
-        
+
     </header>
     <section id="Main">
         <div class="container-fluid">
@@ -84,7 +83,7 @@
         </div>
     </section>
 
-    <section class="py-5 sect3" id="Qualification">
+    <section class="p-5 sect3" id="Qualification">
 
         <div class="container">
             <div class="row justify-content-start">
@@ -95,30 +94,30 @@
             <div class="row slider mt-4">
                 
                 
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                     <div class="details">
-                        <img src="High S (1).png" alt="" width="300px" >
-  
-                    </div>
-  
-                </div>
-                <div class="col-md-12">
-                    <div class="details">
-                      <img src="Secondary school.png" alt="" width="300px">
-  
-                    </div>
-  
-                </div>
-                <div class="col-md-12">
-                    <div class="details ">
-                      <img src="CS.png" alt="" width="300px" >
+                        <img src="High S (1).png" alt="" width="250" >
   
                     </div>
   
                 </div>
                 <div class="col-md-12 ">
+                    <div class="details">
+                      <img src="Secondary school.png" alt="" width="250"  >
+  
+                    </div>
+  
+                </div>
+                <div class="col-md-12  ">
                     <div class="details ">
-                      <img src="Course.png" alt="" width="300px" >
+                      <img src="CS.png" alt="" width="250"   >
+  
+                    </div>
+  
+                </div>
+                <div class="col-md-12  ">
+                    <div class="details ">
+                      <img src="Course.png" alt="" width="250"  >
   
                     </div>
   
@@ -136,14 +135,14 @@
       <div class="container-fluid py-5" id="skills">
           
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-md-5">
             <img
               src="Skills.png"
               class="img-fluid rounded"
               alt="About "
            width="400px" />
           </div>
-          <div class="col-lg-7 col-sm-6" id="progress-div">
+          <div class="col-md-7 col-sm-6" id="progress-div">
             <h2 id="text"><b><b>Skills</b></b></h2>
             <br>
             <p id="para">
@@ -192,14 +191,20 @@
          
     
             
-            <div class="mt-5" style="word-spacing: 25px;" id="btnDiv">
-              <input type="button" class="btn1" value="Hire Me">
-              <a href="#ContactMe"><input type="button" class="btn2" value="Contact Me"> </a>
-          </div>
+           
 
 
             
           </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-12 d-flex justify-content-center align-items-center" >
+            <div class="mt-5">
+              <a href="#ContactMe"><input type="button" class="btn2" value="Contact Me"> </a>
+          </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -264,7 +269,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title"><b>Project 4:Portfolio Website.</b></h5>
                   <p class="card-text" id="para">This portfolio website, built with Bootstrap, showcases an individual’s projects, skills, and professional experience in a visually appealing layout. The responsive design ensures it looks great on all devices, providing visitors with easy navigation and a clear presentation of the portfolio.</p>
-                  <a href="https://legobuilders.netlify.app/" class="btn btn-primary">View Details</a>
+                  <a href="https://midhunthewebdeveloper.netlify.app/" class="btn btn-primary">View Details</a>
                 </div>
               </div>
             </div>
@@ -377,46 +382,7 @@
       </footer>
       
       
-      <script>
-const form = document.getElementById('form');
-const result = document.getElementById('result');
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-  result.innerHTML = "Please wait..."
-
-    fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.innerHTML = "Form submitted successfully";
-            } else {
-                console.log(response);
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
-        });
-});
-</script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -426,7 +392,46 @@ form.addEventListener('submit', function(e) {
     
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    
+    <script>
+      const form = document.getElementById('form');
+      const result = document.getElementById('result');
+      
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait..."
+      
+          fetch('https://api.web3forms.com/submit', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                      'Accept': 'application/json'
+                  },
+                  body: json
+              })
+              .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                      result.innerHTML = "Form submitted successfully";
+                  } else {
+                      console.log(response);
+                      result.innerHTML = json.message;
+                  }
+              })
+              .catch(error => {
+                  console.log(error);
+                  result.innerHTML = "Something went wrong!";
+              })
+              .then(function() {
+                  form.reset();
+                  setTimeout(() => {
+                      result.style.display = "none";
+                  }, 3000);
+              });
+      });
+      </script>
     <script src="Index.js"></script>
 
 

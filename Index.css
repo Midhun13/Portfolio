@@ -96,11 +96,9 @@ color:orangered;
     color: orangered;
 }
 .sect3{
-    background-color:  #6a71791a;
+    background-color:white;
     height: auto;
-    padding-left: 70px;
-    padding-right: 40px;
-    padding-top: 40px;
+    
 }
 #imgtag{
     width: 100px;
@@ -255,6 +253,7 @@ color:orangered;
     border: 1px solid red;
     font-weight: bold;
     border-radius: 10px;
+  
 }
 
 .btn2:hover {
@@ -428,3 +427,29 @@ color:orangered;
     font-weight: bold;
     text-decoration: none;
 }
+
+
+
+
+.slider {
+    margin: 0 auto;
+  }
+  
+  .details img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .slider {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .slider {
+      display: block;
+    }
+  }
+  
+
